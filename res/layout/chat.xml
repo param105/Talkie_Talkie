@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bali"
+    android:weightSum="1">
+    
+    <ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/svtext" 
+    android:layout_weight="1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    
+    >
+  
+    
+			<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/hello" 
+			    android:id="@+id/ed1" 
+			    android:scrollbars="vertical"
+			    android:layout_gravity="bottom"
+			    />
+    
+    </ScrollView>
+    
+<EditText 
+	android:id="@+id/editText1" 
+	android:layout_height="wrap_content" 
+	android:layout_gravity="bottom"
+	android:layout_width="match_parent"/>
+</LinearLayout>

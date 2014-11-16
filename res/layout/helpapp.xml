@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<RelativeLayout 
+		android:id="@+id/relativeLayout1"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:background="@drawable/mainbg">
+		
+		<EditText 
+			android:layout_height="wrap_content" 
+			android:id="@+id/editText1"
+			android:layout_width="wrap_content" 
+			android:layout_below="@+id/button1"
+			android:layout_alignLeft="@+id/button1" 
+			android:layout_marginTop="57dp"
+			android:background="@android:color/transparent"
+			android:textColor="@android:color/white"
+			android:text=""
+		>
+			<requestFocus />
+		</EditText>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/msghint" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/msgchat" 
+			android:layout_centerVertical="true" 
+			android:layout_centerHorizontal="true">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/connection" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/connections" 
+			android:layout_above="@+id/msghint" 
+			android:layout_alignRight="@+id/msghint" 
+			android:layout_alignLeft="@+id/msghint">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/howtodo" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/howtodo"  
+			android:layout_alignLeft="@+id/connection" 
+			android:layout_alignBottom="@+id/editText1" 
+			android:layout_alignRight="@+id/connection">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/ok2" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/ok" 
+			android:layout_alignParentBottom="true" 
+			android:layout_centerHorizontal="true">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/voicehint" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/voicechat" 
+			android:layout_below="@+id/msghint" 
+			android:layout_alignLeft="@+id/msghint" 
+			android:layout_alignRight="@+id/msghint">
+		</Button>
+		
+	</RelativeLayout>
+</LinearLayout>

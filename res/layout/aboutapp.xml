@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:id="@+id/relativeLayout1" 
+		android:layout_height="match_parent"
+		android:background="@drawable/mainbg">
+		
+			<EditText 
+				android:layout_height="wrap_content" 
+				android:id="@+id/editText1"
+				android:textColor="@android:color/white" 
+				android:layout_width="wrap_content"
+				android:background="@android:color/transparent"
+				android:text="
+				this is an wifi application developed for textChat and voiceChat between two android smart phones by connecting to common access point..."
+
+				android:editable="false" 
+				android:layout_below="@+id/button1"
+				android:layout_marginTop="45dp" 
+				android:layout_alignLeft="@+id/button1" />
+		
+		<Button 
+			android:id="@+id/button1" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/talkie5" 
+			android:layout_width="wrap_content"
+			android:enabled="false" 
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" 
+			android:layout_marginTop="37dp" />
+		
+		<Button 
+			android:id="@+id/bttnOkAboutApp" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:background="@drawable/ok"
+			android:layout_below="@+id/editText1"
+			android:layout_centerHorizontal="true" 
+			android:layout_marginTop="28dp" />
+	
+	</RelativeLayout>
+
+</LinearLayout>

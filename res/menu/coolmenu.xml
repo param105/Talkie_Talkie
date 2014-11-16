@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   
+   
+    <item
+    android:id="@+id/confIp"
+       android:icon="@drawable/config"
+       android:title=" Configure Ip "
+    />
+    <item
+    android:title=" About App "
+    android:id="@+id/appDetails"
+       android:icon="@drawable/about1"
+    />
+    <item
+    android:title=" Help "
+    android:id="@+id/appHelp"
+       android:icon="@drawable/help2"
+    /> 
+</menu>

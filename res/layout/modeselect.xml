@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:background="@drawable/wall1"
+	android:weightSum="1">
+	
+	<RelativeLayout 
+		android:layout_weight="0.88"
+		android:id="@+id/relativeLayout1" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<Button 
+			android:id="@+id/voicemike" 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:background="@drawable/davevoice"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" />
+			
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/messaging" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/messaging" 
+			android:layout_above="@+id/voicemike" 
+			android:layout_alignParentRight="true">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/msgbtn" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/msgbtn" 
+			android:layout_alignBottom="@+id/messaging" 
+			android:layout_toLeftOf="@+id/messaging" 
+			android:layout_marginBottom="37dp">
+		</Button>
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/voicecallbtn" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/voicebtn" 
+			android:layout_alignTop="@+id/voicemike" 
+			android:layout_alignLeft="@+id/messaging" 
+			android:layout_marginTop="36dp">
+		</Button>
+	</RelativeLayout>
+
+</LinearLayout>

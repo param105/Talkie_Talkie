@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:weightSum="1">
+	
+	<RelativeLayout 
+		android:layout_height="wrap_content"
+		android:layout_weight="1.12" 
+		android:layout_width="match_parent"
+		android:background="@drawable/bg2" 
+		android:id="@+id/relativeLayout1">
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/startBTN"
+			android:background="@drawable/start" 
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignLeft="@+id/IP" />
+		
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/button1"
+			android:layout_width="wrap_content" 
+			android:background="@drawable/walkitalkies"
+			android:layout_above="@+id/StopBTN" 
+			android:layout_alignParentRight="true" />
+		
+		<Chronometer 
+			android:textSize="30dip"
+			android:layout_height="wrap_content" 
+			android:textColor="#0F0"
+			android:enabled="false"
+			android:visibility="invisible"
+			android:layout_width="wrap_content" 
+			android:text="DigitalClock"
+			android:id="@+id/clock" 
+			android:layout_above="@+id/button1"
+			android:layout_centerHorizontal="true" />
+			
+		<EditText 
+			android:id="@+id/IP" 
+			android:layout_height="wrap_content" 
+			android:width="270dp" 
+			android:layout_width="wrap_content" 
+			android:editable="false" 
+			android:layout_above="@+id/clock" 
+			android:layout_centerHorizontal="true">
+			
+			<requestFocus>
+			</requestFocus>
+		</EditText>
+		
+		<TextView 
+			android:text="welcome..." 
+			android:textSize="30dip" 
+			android:layout_height="wrap_content" 
+			android:textColor="#FF3500" 
+			android:id="@+id/label" 
+			android:layout_width="wrap_content" 
+			android:layout_centerVertical="true" 
+			android:layout_alignLeft="@+id/button1">
+			
+		</TextView>
+			
+			<Button 
+				android:layout_height="wrap_content" 
+				android:id="@+id/StopBTN" 
+				android:layout_width="wrap_content" 
+				android:background="@drawable/end2" 
+				android:layout_alignParentBottom="true" 
+				android:layout_alignRight="@+id/IP">
+			</Button>
+
+
+	</RelativeLayout>
+
+</LinearLayout>
